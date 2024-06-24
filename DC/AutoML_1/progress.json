@@ -1,0 +1,768 @@
+{
+    "fit_level": "default_algorithms",
+    "time_controller": {
+        "total_time_limit": 3600,
+        "model_time_limit": null,
+        "steps": [
+            "adjust_validation",
+            "simple_algorithms",
+            "default_algorithms",
+            "not_so_random",
+            "golden_features",
+            "kmeans_features",
+            "insert_random_feature",
+            "features_selection",
+            "hill_climbing_1",
+            "hill_climbing_2",
+            "boost_on_errors",
+            "ensemble",
+            "stack",
+            "ensemble_stacked"
+        ],
+        "algorithms": [
+            "Decision Tree",
+            "Random Forest",
+            "Extra Trees",
+            "LightGBM",
+            "Xgboost",
+            "CatBoost",
+            "Neural Network",
+            "Nearest Neighbors"
+        ],
+        "spend": [
+            {
+                "model_name": "prepare_data",
+                "model_type": "prepare_data",
+                "fit_level": "prepare_data",
+                "train_time": 2.1896748542785645
+            },
+            {
+                "model_name": "1_DecisionTree",
+                "model_type": "Decision Tree",
+                "fit_level": "adjust_validation",
+                "train_time": 4.028882741928101
+            },
+            {
+                "model_name": "1_DecisionTree",
+                "model_type": "Decision Tree",
+                "fit_level": "simple_algorithms",
+                "train_time": 33.6907594203949
+            },
+            {
+                "model_name": "2_DecisionTree",
+                "model_type": "Decision Tree",
+                "fit_level": "simple_algorithms",
+                "train_time": 42.27084422111511
+            },
+            {
+                "model_name": "3_DecisionTree",
+                "model_type": "Decision Tree",
+                "fit_level": "simple_algorithms",
+                "train_time": 41.98313570022583
+            }
+        ],
+        "is_hill_climbing": true,
+        "is_stacking": true
+    },
+    "all_params": {
+        "adjust_validation": [
+            {
+                "additional": {
+                    "trees_in_step": 1,
+                    "train_cant_improve_limit": 0,
+                    "max_steps": 1,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uac00\uc744": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uaca8\uc6b8": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\ubd04": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uc5ec\ub984": [
+                            "remove_column"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "shuffle": true,
+                    "X_path": "AutoML_1\\X.data",
+                    "y_path": "AutoML_1\\y.data",
+                    "results_path": "AutoML_1",
+                    "k_folds": 10
+                },
+                "learner": {
+                    "model_type": "Decision Tree",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1235,
+                    "criterion": "squared_error",
+                    "max_depth": 3,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "1_DecisionTree",
+                "status": "trained",
+                "final_loss": 7.563558345184067,
+                "train_time": 4.393660068511963,
+                "data_type": "original",
+                "max_time_for_learner": 360.0
+            }
+        ],
+        "simple_algorithms": [
+            {
+                "additional": {
+                    "trees_in_step": 1,
+                    "train_cant_improve_limit": 0,
+                    "max_steps": 1,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uac00\uc744": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uaca8\uc6b8": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\ubd04": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uc5ec\ub984": [
+                            "remove_column"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "shuffle": true,
+                    "X_path": "AutoML_1\\X.data",
+                    "y_path": "AutoML_1\\y.data",
+                    "results_path": "AutoML_1",
+                    "k_folds": 10
+                },
+                "learner": {
+                    "model_type": "Decision Tree",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1235,
+                    "criterion": "squared_error",
+                    "max_depth": 3,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "1_DecisionTree",
+                "status": "trained",
+                "final_loss": 7.5566860382872045,
+                "train_time": 35.482194900512695,
+                "data_type": "original",
+                "max_time_for_learner": 60
+            },
+            {
+                "additional": {
+                    "trees_in_step": 1,
+                    "train_cant_improve_limit": 0,
+                    "max_steps": 1,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uac00\uc744": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uaca8\uc6b8": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\ubd04": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uc5ec\ub984": [
+                            "remove_column"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "shuffle": true,
+                    "X_path": "AutoML_1\\X.data",
+                    "y_path": "AutoML_1\\y.data",
+                    "results_path": "AutoML_1",
+                    "k_folds": 10
+                },
+                "learner": {
+                    "model_type": "Decision Tree",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1236,
+                    "criterion": "squared_error",
+                    "max_depth": 4,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "2_DecisionTree",
+                "status": "trained",
+                "final_loss": 6.562509181867058,
+                "train_time": 44.05847120285034,
+                "data_type": "original",
+                "max_time_for_learner": 60
+            },
+            {
+                "additional": {
+                    "trees_in_step": 1,
+                    "train_cant_improve_limit": 0,
+                    "max_steps": 1,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uac00\uc744": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uaca8\uc6b8": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\ubd04": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uc5ec\ub984": [
+                            "remove_column"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "shuffle": true,
+                    "X_path": "AutoML_1\\X.data",
+                    "y_path": "AutoML_1\\y.data",
+                    "results_path": "AutoML_1",
+                    "k_folds": 10
+                },
+                "learner": {
+                    "model_type": "Decision Tree",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1237,
+                    "criterion": "squared_error",
+                    "max_depth": 4,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "3_DecisionTree",
+                "status": "trained",
+                "final_loss": 6.562509181867057,
+                "train_time": 43.83558535575867,
+                "data_type": "original",
+                "max_time_for_learner": 60
+            }
+        ],
+        "default_algorithms": [
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uac00\uc744": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uaca8\uc6b8": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\ubd04": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uc5ec\ub984": [
+                            "remove_column"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "scale_normal"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "shuffle": true,
+                    "X_path": "AutoML_1\\X.data",
+                    "y_path": "AutoML_1\\y.data",
+                    "results_path": "AutoML_1",
+                    "k_folds": 10
+                },
+                "learner": {
+                    "model_type": "LightGBM",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "objective": "regression",
+                    "num_leaves": 63,
+                    "learning_rate": 0.05,
+                    "feature_fraction": 0.9,
+                    "bagging_fraction": 0.9,
+                    "min_data_in_leaf": 10,
+                    "seed": 4,
+                    "metric": "rmse",
+                    "custom_eval_metric_name": null,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "4_Default_LightGBM",
+                "status": "error",
+                "final_loss": null,
+                "train_time": null,
+                "data_type": "original",
+                "max_time_for_learner": 60
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uac00\uc744": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uaca8\uc6b8": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\ubd04": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uc5ec\ub984": [
+                            "remove_column"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "scale_normal"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "shuffle": true,
+                    "X_path": "AutoML_1\\X.data",
+                    "y_path": "AutoML_1\\y.data",
+                    "results_path": "AutoML_1",
+                    "k_folds": 10
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "objective": "reg:squarederror",
+                    "eta": 0.075,
+                    "max_depth": 6,
+                    "min_child_weight": 1,
+                    "subsample": 1.0,
+                    "colsample_bytree": 1.0,
+                    "seed": 5,
+                    "eval_metric": "rmse"
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "5_Default_Xgboost",
+                "status": "initialized",
+                "final_loss": null,
+                "train_time": null,
+                "data_type": "original"
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uac00\uc744": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uaca8\uc6b8": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\ubd04": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uc5ec\ub984": [
+                            "remove_column"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "scale_normal"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "shuffle": true,
+                    "X_path": "AutoML_1\\X.data",
+                    "y_path": "AutoML_1\\y.data",
+                    "results_path": "AutoML_1",
+                    "k_folds": 10
+                },
+                "learner": {
+                    "model_type": "CatBoost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "learning_rate": 0.1,
+                    "depth": 6,
+                    "rsm": 1,
+                    "loss_function": "RMSE",
+                    "seed": 6,
+                    "eval_metric": "RMSE"
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "6_Default_CatBoost",
+                "status": "initialized",
+                "final_loss": null,
+                "train_time": null,
+                "data_type": "original"
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "\uaca9\uc790\ub118\ubc84": [
+                            "scale_normal"
+                        ],
+                        "\uc2dc\uac04": [
+                            "scale_normal"
+                        ],
+                        "\uc9c0\uc810\ubc88\ud638": [
+                            "scale_normal"
+                        ],
+                        "\uc804\ub825\uc218\uc694\ud569\uacc4": [
+                            "scale_normal"
+                        ],
+                        "\uae30\uc628": [
+                            "scale_normal"
+                        ],
+                        "\uc0c1\ub300\uc2b5\ub3c4": [
+                            "scale_normal"
+                        ],
+                        "\ud48d\uc18d": [
+                            "scale_normal"
+                        ],
+                        "\uccb4\uac10\uc628\ub3c4": [
+                            "scale_normal"
+                        ],
+                        "\uc694\uc77c": [
+                            "scale_normal"
+                        ],
+                        "\uc6d4": [
+                            "scale_normal"
+                        ],
+                        "\uc77c": [
+                            "scale_normal"
+                        ],
+                        "HDH": [
+                            "scale_normal"
+                        ],
+                        "\ubd88\ucf8c\uc9c0\uc218": [
+                            "scale_normal"
+                        ],
+                        "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uac00\uc744": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uaca8\uc6b8": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\ubd04": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uc5ec\ub984": [
+                            "remove_column"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "scale_normal"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "shuffle": true,
+                    "X_path": "AutoML_1\\X.data",
+                    "y_path": "AutoML_1\\y.data",
+                    "results_path": "AutoML_1",
+                    "k_folds": 10
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "dense_1_size": 32,
+                    "dense_2_size": 16,
+                    "learning_rate": 0.05,
+                    "seed": 7
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "7_Default_NeuralNetwork",
+                "status": "initialized",
+                "final_loss": null,
+                "train_time": null,
+                "data_type": "original"
+            },
+            {
+                "additional": {
+                    "trees_in_step": 100,
+                    "train_cant_improve_limit": 1,
+                    "min_steps": 1,
+                    "max_steps": 50,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uac00\uc744": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uaca8\uc6b8": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\ubd04": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uc5ec\ub984": [
+                            "remove_column"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "scale_normal"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "shuffle": true,
+                    "X_path": "AutoML_1\\X.data",
+                    "y_path": "AutoML_1\\y.data",
+                    "results_path": "AutoML_1",
+                    "k_folds": 10
+                },
+                "learner": {
+                    "model_type": "Random Forest",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "criterion": "squared_error",
+                    "max_features": 0.9,
+                    "min_samples_split": 30,
+                    "max_depth": 4,
+                    "seed": 8,
+                    "eval_metric_name": "rmse"
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "8_Default_RandomForest",
+                "status": "initialized",
+                "final_loss": null,
+                "train_time": null,
+                "data_type": "original"
+            },
+            {
+                "additional": {
+                    "trees_in_step": 100,
+                    "max_steps": 50,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uac00\uc744": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uaca8\uc6b8": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\ubd04": [
+                            "remove_column"
+                        ],
+                        "\uacc4\uc808_\uc5ec\ub984": [
+                            "remove_column"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "scale_normal"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "shuffle": true,
+                    "X_path": "AutoML_1\\X.data",
+                    "y_path": "AutoML_1\\y.data",
+                    "results_path": "AutoML_1",
+                    "k_folds": 10
+                },
+                "learner": {
+                    "model_type": "Extra Trees",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "criterion": "squared_error",
+                    "max_features": 0.9,
+                    "min_samples_split": 30,
+                    "max_depth": 4,
+                    "seed": 9,
+                    "eval_metric_name": "rmse"
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "9_Default_ExtraTrees",
+                "status": "initialized",
+                "final_loss": null,
+                "train_time": null,
+                "data_type": "original"
+            }
+        ]
+    },
+    "adjust_validation": false
+}

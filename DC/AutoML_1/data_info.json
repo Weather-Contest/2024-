@@ -1,0 +1,101 @@
+{
+    "columns": [
+        "\uaca9\uc790\ub118\ubc84",
+        "\uc2dc\uac04",
+        "\uc9c0\uc810\ubc88\ud638",
+        "\uc804\ub825\uc218\uc694\ud569\uacc4",
+        "\uae30\uc628",
+        "\uc0c1\ub300\uc2b5\ub3c4",
+        "\ud48d\uc18d",
+        "\uac15\uc218\ub7c9",
+        "\uccb4\uac10\uc628\ub3c4",
+        "\uc694\uc77c",
+        "\uc8fc\uc911\uc8fc\ub9d0",
+        "\uc6d4",
+        "\uc77c",
+        "CDH",
+        "HDH",
+        "\ubd88\ucf8c\uc9c0\uc218",
+        "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0",
+        "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0",
+        "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0",
+        "\uacc4\uc808_\uac00\uc744",
+        "\uacc4\uc808_\uaca8\uc6b8",
+        "\uacc4\uc808_\ubd04",
+        "\uacc4\uc808_\uc5ec\ub984"
+    ],
+    "rows": 1485578,
+    "cols": 23,
+    "target_is_numeric": true,
+    "columns_info": {
+        "\uaca9\uc790\ub118\ubc84": [
+            "scale"
+        ],
+        "\uc2dc\uac04": [
+            "scale"
+        ],
+        "\uc9c0\uc810\ubc88\ud638": [
+            "scale"
+        ],
+        "\uc804\ub825\uc218\uc694\ud569\uacc4": [
+            "scale"
+        ],
+        "\uae30\uc628": [
+            "scale"
+        ],
+        "\uc0c1\ub300\uc2b5\ub3c4": [
+            "scale"
+        ],
+        "\ud48d\uc18d": [
+            "scale"
+        ],
+        "\uac15\uc218\ub7c9": [],
+        "\uccb4\uac10\uc628\ub3c4": [
+            "scale"
+        ],
+        "\uc694\uc77c": [
+            "scale"
+        ],
+        "\uc8fc\uc911\uc8fc\ub9d0": [],
+        "\uc6d4": [
+            "scale"
+        ],
+        "\uc77c": [
+            "scale"
+        ],
+        "CDH": [],
+        "HDH": [
+            "scale"
+        ],
+        "\ubd88\ucf8c\uc9c0\uc218": [
+            "scale"
+        ],
+        "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+            "constant_column"
+        ],
+        "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+            "constant_column"
+        ],
+        "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+            "constant_column"
+        ],
+        "\uacc4\uc808_\uac00\uc744": [
+            "constant_column"
+        ],
+        "\uacc4\uc808_\uaca8\uc6b8": [
+            "constant_column"
+        ],
+        "\uacc4\uc808_\ubd04": [
+            "constant_column"
+        ],
+        "\uacc4\uc808_\uc5ec\ub984": [
+            "constant_column"
+        ]
+    },
+    "target_info": [
+        "scale"
+    ],
+    "n_features": 23,
+    "is_sample_weighted": false,
+    "is_fairness_applied": false
+}

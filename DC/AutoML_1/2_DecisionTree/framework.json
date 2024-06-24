@@ -1,0 +1,660 @@
+{
+    "uid": "6d8a70f1-0442-4f89-af77-45e343f1d505",
+    "name": "2_DecisionTree",
+    "preprocessing": [
+        {
+            "remove_columns": [
+                "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\uacc4\uc808_\uac00\uc744",
+                "\uacc4\uc808_\uaca8\uc6b8",
+                "\uacc4\uc808_\ubd04",
+                "\uacc4\uc808_\uc5ec\ub984"
+            ],
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uac00\uc744": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uaca8\uc6b8": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\ubd04": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uc5ec\ub984": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "remove_columns": [
+                "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\uacc4\uc808_\uac00\uc744",
+                "\uacc4\uc808_\uaca8\uc6b8",
+                "\uacc4\uc808_\ubd04",
+                "\uacc4\uc808_\uc5ec\ub984"
+            ],
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uac00\uc744": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uaca8\uc6b8": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\ubd04": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uc5ec\ub984": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "remove_columns": [
+                "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\uacc4\uc808_\uac00\uc744",
+                "\uacc4\uc808_\uaca8\uc6b8",
+                "\uacc4\uc808_\ubd04",
+                "\uacc4\uc808_\uc5ec\ub984"
+            ],
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uac00\uc744": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uaca8\uc6b8": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\ubd04": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uc5ec\ub984": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "remove_columns": [
+                "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\uacc4\uc808_\uac00\uc744",
+                "\uacc4\uc808_\uaca8\uc6b8",
+                "\uacc4\uc808_\ubd04",
+                "\uacc4\uc808_\uc5ec\ub984"
+            ],
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uac00\uc744": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uaca8\uc6b8": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\ubd04": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uc5ec\ub984": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "remove_columns": [
+                "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\uacc4\uc808_\uac00\uc744",
+                "\uacc4\uc808_\uaca8\uc6b8",
+                "\uacc4\uc808_\ubd04",
+                "\uacc4\uc808_\uc5ec\ub984"
+            ],
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uac00\uc744": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uaca8\uc6b8": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\ubd04": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uc5ec\ub984": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "remove_columns": [
+                "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\uacc4\uc808_\uac00\uc744",
+                "\uacc4\uc808_\uaca8\uc6b8",
+                "\uacc4\uc808_\ubd04",
+                "\uacc4\uc808_\uc5ec\ub984"
+            ],
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uac00\uc744": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uaca8\uc6b8": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\ubd04": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uc5ec\ub984": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "remove_columns": [
+                "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\uacc4\uc808_\uac00\uc744",
+                "\uacc4\uc808_\uaca8\uc6b8",
+                "\uacc4\uc808_\ubd04",
+                "\uacc4\uc808_\uc5ec\ub984"
+            ],
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uac00\uc744": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uaca8\uc6b8": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\ubd04": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uc5ec\ub984": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "remove_columns": [
+                "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\uacc4\uc808_\uac00\uc744",
+                "\uacc4\uc808_\uaca8\uc6b8",
+                "\uacc4\uc808_\ubd04",
+                "\uacc4\uc808_\uc5ec\ub984"
+            ],
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uac00\uc744": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uaca8\uc6b8": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\ubd04": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uc5ec\ub984": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "remove_columns": [
+                "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\uacc4\uc808_\uac00\uc744",
+                "\uacc4\uc808_\uaca8\uc6b8",
+                "\uacc4\uc808_\ubd04",
+                "\uacc4\uc808_\uc5ec\ub984"
+            ],
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uac00\uc744": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uaca8\uc6b8": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\ubd04": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uc5ec\ub984": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "remove_columns": [
+                "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0",
+                "\uacc4\uc808_\uac00\uc744",
+                "\uacc4\uc808_\uaca8\uc6b8",
+                "\uacc4\uc808_\ubd04",
+                "\uacc4\uc808_\uc5ec\ub984"
+            ],
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uac00\uc744": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uaca8\uc6b8": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\ubd04": [
+                        "remove_column"
+                    ],
+                    "\uacc4\uc808_\uc5ec\ub984": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.5.0",
+            "algorithm_name": "Decision Tree",
+            "algorithm_short_name": "Decision Tree",
+            "uid": "0c429a9b-270c-4f2b-be1f-42f7a081eb44",
+            "params": {
+                "model_type": "Decision Tree",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1236,
+                "criterion": "squared_error",
+                "max_depth": 4,
+                "explain_level": 0
+            },
+            "name": "learner_fold_0"
+        },
+        {
+            "library_version": "1.5.0",
+            "algorithm_name": "Decision Tree",
+            "algorithm_short_name": "Decision Tree",
+            "uid": "6ead7b31-5ba3-4113-9421-f168484f1300",
+            "params": {
+                "model_type": "Decision Tree",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1236,
+                "criterion": "squared_error",
+                "max_depth": 4,
+                "explain_level": 0
+            },
+            "name": "learner_fold_1"
+        },
+        {
+            "library_version": "1.5.0",
+            "algorithm_name": "Decision Tree",
+            "algorithm_short_name": "Decision Tree",
+            "uid": "496226cb-e890-45a7-9e96-c58577177748",
+            "params": {
+                "model_type": "Decision Tree",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1236,
+                "criterion": "squared_error",
+                "max_depth": 4,
+                "explain_level": 0
+            },
+            "name": "learner_fold_2"
+        },
+        {
+            "library_version": "1.5.0",
+            "algorithm_name": "Decision Tree",
+            "algorithm_short_name": "Decision Tree",
+            "uid": "7f71567c-a16c-433f-925c-acdfc3d82649",
+            "params": {
+                "model_type": "Decision Tree",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1236,
+                "criterion": "squared_error",
+                "max_depth": 4,
+                "explain_level": 0
+            },
+            "name": "learner_fold_3"
+        },
+        {
+            "library_version": "1.5.0",
+            "algorithm_name": "Decision Tree",
+            "algorithm_short_name": "Decision Tree",
+            "uid": "ece703c8-7efe-465a-ae1a-3e7742e247fb",
+            "params": {
+                "model_type": "Decision Tree",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1236,
+                "criterion": "squared_error",
+                "max_depth": 4,
+                "explain_level": 0
+            },
+            "name": "learner_fold_4"
+        },
+        {
+            "library_version": "1.5.0",
+            "algorithm_name": "Decision Tree",
+            "algorithm_short_name": "Decision Tree",
+            "uid": "1d92536b-d1f7-4bc3-a61b-fc55f3a72f41",
+            "params": {
+                "model_type": "Decision Tree",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1236,
+                "criterion": "squared_error",
+                "max_depth": 4,
+                "explain_level": 0
+            },
+            "name": "learner_fold_5"
+        },
+        {
+            "library_version": "1.5.0",
+            "algorithm_name": "Decision Tree",
+            "algorithm_short_name": "Decision Tree",
+            "uid": "1132b306-0306-4d2c-a5f3-10ae3a9a26de",
+            "params": {
+                "model_type": "Decision Tree",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1236,
+                "criterion": "squared_error",
+                "max_depth": 4,
+                "explain_level": 0
+            },
+            "name": "learner_fold_6"
+        },
+        {
+            "library_version": "1.5.0",
+            "algorithm_name": "Decision Tree",
+            "algorithm_short_name": "Decision Tree",
+            "uid": "32dd4d6e-99b2-4b6d-9176-975c011de210",
+            "params": {
+                "model_type": "Decision Tree",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1236,
+                "criterion": "squared_error",
+                "max_depth": 4,
+                "explain_level": 0
+            },
+            "name": "learner_fold_7"
+        },
+        {
+            "library_version": "1.5.0",
+            "algorithm_name": "Decision Tree",
+            "algorithm_short_name": "Decision Tree",
+            "uid": "deddefca-6579-4561-8091-c87eaa13252d",
+            "params": {
+                "model_type": "Decision Tree",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1236,
+                "criterion": "squared_error",
+                "max_depth": 4,
+                "explain_level": 0
+            },
+            "name": "learner_fold_8"
+        },
+        {
+            "library_version": "1.5.0",
+            "algorithm_name": "Decision Tree",
+            "algorithm_short_name": "Decision Tree",
+            "uid": "ffde980a-63c5-4327-8138-c6301a3ce159",
+            "params": {
+                "model_type": "Decision Tree",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1236,
+                "criterion": "squared_error",
+                "max_depth": 4,
+                "explain_level": 0
+            },
+            "name": "learner_fold_9"
+        }
+    ],
+    "params": {
+        "additional": {
+            "trees_in_step": 1,
+            "train_cant_improve_limit": 0,
+            "max_steps": 1,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "\uae30\uc628_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                    "remove_column"
+                ],
+                "\ud48d\uc18d_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                    "remove_column"
+                ],
+                "\uac15\uc218\ub7c9_\uacc4\uc808\ubcc4\ud3c9\uade0": [
+                    "remove_column"
+                ],
+                "\uacc4\uc808_\uac00\uc744": [
+                    "remove_column"
+                ],
+                "\uacc4\uc808_\uaca8\uc6b8": [
+                    "remove_column"
+                ],
+                "\uacc4\uc808_\ubd04": [
+                    "remove_column"
+                ],
+                "\uacc4\uc808_\uc5ec\ub984": [
+                    "remove_column"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "kfold",
+            "shuffle": true,
+            "X_path": "AutoML_1\\X.data",
+            "y_path": "AutoML_1\\y.data",
+            "results_path": "AutoML_1",
+            "k_folds": 10
+        },
+        "learner": {
+            "model_type": "Decision Tree",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "seed": 1236,
+            "criterion": "squared_error",
+            "max_depth": 4,
+            "explain_level": 0
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 0,
+        "name": "2_DecisionTree",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 60
+    },
+    "saved": [
+        "2_DecisionTree\\learner_fold_0.decision_tree",
+        "2_DecisionTree\\learner_fold_1.decision_tree",
+        "2_DecisionTree\\learner_fold_2.decision_tree",
+        "2_DecisionTree\\learner_fold_3.decision_tree",
+        "2_DecisionTree\\learner_fold_4.decision_tree",
+        "2_DecisionTree\\learner_fold_5.decision_tree",
+        "2_DecisionTree\\learner_fold_6.decision_tree",
+        "2_DecisionTree\\learner_fold_7.decision_tree",
+        "2_DecisionTree\\learner_fold_8.decision_tree",
+        "2_DecisionTree\\learner_fold_9.decision_tree"
+    ],
+    "predictions_fname": "2_DecisionTree\\predictions_out_of_folds.csv",
+    "metric_name": "rmse",
+    "final_loss": "6.562509181867058",
+    "train_time": 42.27084422111511,
+    "is_stacked": false,
+    "joblib_version": "1.4.2"
+}
